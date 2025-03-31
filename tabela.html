@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <link rel="shortcut icon" href="projetoEx10/imagens/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        place-items: center;
+    }
+    table{
+        border-collapse: collapse;
+        display: grid;
+        place-items: center;
+        width: 644px;
+    }
+    tr:nth-child(odd){
+        background-color: lightgrey;        
+    }
+    td{
+        border: solid black 1px;
+        width: 200px;
+        padding: 10px;
+    }
+    th{
+        border: solid 1px black;
+        text-transform: uppercase;
+        background-color: lightblue;
+        font-size: larger;
+    }
+    .numero{
+        text-align: right;
+    }
+    .equipe{
+        text-transform: uppercase;
+        font-size: larger;
+    }
+    #rodape1{
+        display: grid;
+        place-items: center;
+    }
+    #rodape2{
+        width: 644px;
+    }
+    #tabela2{
+        height: 1vh;
+    }
+    .cal{
+        height: 100px;
+        background-color: white;
+        text-align: center;
+        font-size: larger;
+    }
+    .tecla:hover{
+        background-color: lightblue;
+    }
+    .tecla:active{
+        background-color: blue;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<body>
+    <table>
+        <th>
+            Time
+        </th>
+        <th>
+            pontuação
+        </th>
+        <th>
+            Saldo de gols
+        </th>
+        <tr>
+            <td class="equipe">Corinthians</td>
+            <td class="numero">50</td>
+            <td class="numero">20</td>
+        </tr>
+        <tr>
+            <td class="equipe">Palmeiras</td>
+            <td class="numero">40</td>
+            <td class="numero">15</td>
+        </tr>
+        <tr>
+            <td class="equipe">São paulo</td>
+            <td class="numero">30</td>
+            <td class="numero">10</td>
+        </tr>
+        <tfoot id="rodape1">
+            <th id="rodape2">
+                Tabela de times
+            </th>
+        </tfoot>
+    </table>
+    <table id="tabela2">
+        <tr class="cal">
+            <td class="tecla">7</td>
+            <td class="tecla">8</td>
+            <td class="tecla">9</td>
+            <td class="tecla" rowspan="2">x</td>
+        </tr>
+        <tr class="cal">
+            <td class="tecla">4</td>
+            <td class="tecla"><a href="https://www.google.com/">5</a></td>
+            <td class="tecla">6</td>
+        </tr>
+        <tr class="cal">
+            <td class="tecla" colspan="2">1</td>
+            <td class="tecla">3</td>
+            <td class="tecla">+</td>
+        </tr>
+        <tr class="cal">
+            <td class="tecla">%</td>
+            <td class="tecla">0</td>
+            <td class="tecla">,</td>
+            <td class="tecla">=</td>
+        </tr>
+    </table>
+</body>
+</html>
